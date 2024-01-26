@@ -10,7 +10,7 @@ import configparser
 
 
 config = configparser.RawConfigParser()
-config.read('./config.cfg')
+config.read('./config.cfg',encoding='utf-8')
 
 user = config.get('wenshushu','user').replace('"', '') 
 pwd = config.get('wenshushu','pwd').replace('"', '')
